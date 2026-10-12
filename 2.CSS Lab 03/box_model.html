@@ -1,0 +1,56 @@
+<html>
+    <body>
+        <title>Box Model</title>
+        <style>
+            .box_1 {
+                border: 2px solid black;
+                width: 300px;
+                height: 300px;
+                background-color: blue;
+                margin-top: 200px;
+                margin-left: 200px;
+                border-radius: 10%;
+            }
+            .box_2 {
+                border: 2px solid black;
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                margin: 48px;
+                border-radius: 10%;
+            }
+            :hover.box_2 {
+                background-color: brown;
+            }
+            .circle_1 {
+                border: 2px solid black;
+                width: 100px;
+                height: 100px;
+                background-color: green;
+                margin: 48px;
+                border-radius: 50%;
+            }
+            :hover.circle_1 {
+                background-color: greenyellow;
+                border: 2px solid white;
+            }
+            .circle_2 {
+                border: 2px solid black;
+                width: 50px;
+                height: 50px;
+                background-color: black;
+                margin: 23px;
+                border-radius: 50%;
+            }
+        </style>
+    </body>
+    <body>
+        <div class="box_1">
+            <div class="box_2">
+                <div class="circle_1">
+                    <div class="circle_2"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

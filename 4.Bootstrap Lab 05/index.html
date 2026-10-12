@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="cusit.png" alt="Cusit Logo" width="70px"
+                    style="border-radius: 50%; border: 2px solid green;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Web
+                            Engineering</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">HTML</a></li>
+                            <li><a class="dropdown-item" href="#">CSS</a></li>
+                            <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image1.jpg" alt="Los Angeles" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="image2.jpg" alt="Chicago" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="image3.jpg" alt="New York" class="d-block w-100">
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Product Cards -->
+    <section style="background-color: #eee;">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+                    <div class="card text-black">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-product-cards/img1.webp"
+                            class="card-img-top" alt="iPhone" />
+                        <div class="card-body">
+                            <div class="text-center mt-1">
+                                <h4 class="card-title">iPhone X</h4>
+                                <h6 class="text-primary mb-1 pb-3">Starting at $399</h6>
+                            </div>
+
+                            <div class="text-center">
+                                <div class="p-3 mx-n3 mb-4" style="background-color: #eff1f2;">
+                                    <h5 class="mb-0">Quick Look</h5>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="h1 mb-0">5.8″</span>
+                                    <span>Super Retina HD display1</span>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="h1 mb-0">
+                                        <i class="fas fa-camera-retro"></i>
+                                    </span>
+                                    <ul class="list-unstyled mb-0">
+                                        <li aria-hidden="true">—</li>
+                                        <li>Wide</li>
+                                        <li>Telephoto</li>
+                                        <li aria-hidden="true">—</li>
+                                    </ul>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="h1 mb-0">2x</span>
+                                    <span>Optical zoom range</span>
+                                </div>
+
+                                <div class="p-3 mx-n3 mb-4" style="background-color: #eff1f2;">
+                                    <h5 class="mb-0">Capacity</h5>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4 lead">
+                                    <span class="mb-2">64GB</span>
+                                    <span class="mb-2">256GB</span>
+                                    <span style="color: transparent;">0</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row">
+                                <button type="button" data-mdb-button-init data-mdb-ripple-init
+                                    class="btn btn-primary flex-fill me-1" data-mdb-ripple-color="dark">
+                                    Learn more
+                                </button>
+                                <button type="button" data-mdb-button-init data-mdb-ripple-init
+                                    class="btn btn-danger flex-fill ms-1">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                    <div class="card text-black">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-product-cards/img2.webp"
+                            class="card-img-top" alt="iPhone" />
+                        <div class="card-body">
+                            <div class="text-center mt-1">
+                                <h4 class="card-title">iPhone 11</h4>
+                                <h6 class="text-primary mb-1 pb-3">Starting at $499</h6>
+                            </div>
+
+                            <div class="text-center">
+                                <div class="p-3 mx-n3 mb-4" style="background-color: #eff1f2;">
+                                    <h5 class="mb-0">Quick Look</h5>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="h1 mb-0">6.1″</span>
+                                    <span>Liquid Retina HD display1</span>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="h1 mb-0">
+                                        <i class="fas fa-camera-retro"></i>
+                                    </span>
+                                    <ul class="list-unstyled mb-0">
+                                        <li aria-hidden="true">Ultra Wide</li>
+                                        <li>Wide</li>
+                                        <li aria-hidden="true">—</li>
+                                        <li aria-hidden="true">—</li>
+                                    </ul>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="h1 mb-0">2x</span>
+                                    <span>Optical zoom range</span>
+                                </div>
+
+                                <div class="p-3 mx-n3 mb-4" style="background-color: #eff1f2;">
+                                    <h5 class="mb-0">Capacity</h5>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4 lead">
+                                    <span class="mb-2">64GB</span>
+                                    <span class="mb-2">128GB</span>
+                                    <span>256GB</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row">
+                                <button type="button" data-mdb-button-init data-mdb-ripple-init
+                                    class="btn btn-primary flex-fill me-1" data-mdb-ripple-color="dark">
+                                    Learn more
+                                </button>
+                                <button type="button" data-mdb-button-init data-mdb-ripple-init
+                                    class="btn btn-danger flex-fill ms-1">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                    <div class="card text-black">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-product-cards/img3.webp"
+                            class="card-img-top" alt="iPhone" />
+                        <div class="card-body">
+                            <div class="text-center mt-1">
+                                <h4 class="card-title">iPhone 11 Pro</h4>
+                                <h6 class="text-primary mb-1 pb-3">Starting at $599</h6>
+                            </div>
+
+                            <div class="text-center">
+                                <div class="p-3 mx-n3 mb-4" style="background-color: #eff1f2;">
+                                    <h5 class="mb-0">Quick Look</h5>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="h1 mb-0">5.8″</span>
+                                    <span>Super Retina HD display1</span>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="h1 mb-0">
+                                        <i class="fas fa-camera-retro"></i>
+                                    </span>
+                                    <ul class="list-unstyled mb-0">
+                                        <li aria-hidden="true">Ultra Wide</li>
+                                        <li>Wide</li>
+                                        <li>Telephoto</li>
+                                        <li aria-hidden="true">—</li>
+                                    </ul>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="h1 mb-0">4x</span>
+                                    <span>Optical zoom range</span>
+                                </div>
+
+                                <div class="p-3 mx-n3 mb-4" style="background-color: #eff1f2;">
+                                    <h5 class="mb-0">Capacity</h5>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4 lead">
+                                    <span class="mb-2">64GB</span>
+                                    <span class="mb-2">256GB</span>
+                                    <span>512GB</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row">
+                                <button type="button" data-mdb-button-init data-mdb-ripple-init
+                                    class="btn btn-primary flex-fill me-1" data-mdb-ripple-color="dark">
+                                    Learn more
+                                </button>
+                                <button type="button" data-mdb-button-init data-mdb-ripple-init
+                                    class="btn btn-danger flex-fill ms-1">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs -->
+    <h2 style="margin-top: 50px; margin-left: 20px;">Blogs</h2>
+    <div style="display: flex; justify-content: space-around; gap: 50px; padding: 30px 5% 0 5%;">
+        <div class="card" style="width: 18rem;">
+            <img src="image1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="image2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="image3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+     <h2>Form</h2>
+    <form action="/action_page.php" style="width: 50%; margin: auto; border: 2px solid; padding: 20px;">
+        <div class="mb-3 mt-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="mb-3">
+            <label for="pwd" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+        <div class="form-check mb-3">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</body>
+
+</html>

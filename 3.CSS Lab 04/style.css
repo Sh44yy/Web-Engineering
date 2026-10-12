@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    height: 1200px;
+}
+.header {
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.sideBar {
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: 25%;
+    height: 1100px;
+    background-color: blueviolet;
+    float: left;
+}
+
+.heroSection {
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: 75%;
+    height: 500px;
+    float: left;
+    background-color: brown;
+}
+
+.aboutSection {
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: 75%;
+    height: 300px;
+    float: left;
+    background-color: rgb(44, 98, 186);
+}
+
+.servicesSection {
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: 75%;
+    height: 300px;
+    float: left;
+    background-color: rgb(50, 203, 119);
+}
+
+.footer {
+        border: 2px solid black;
+        background-color: rgb(227, 74, 153);
+        box-sizing: border-box;
+        width: 100%;
+        
+    }
